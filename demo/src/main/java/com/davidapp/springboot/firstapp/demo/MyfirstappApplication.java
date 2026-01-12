@@ -1,5 +1,6 @@
 package com.davidapp.springboot.firstapp.demo;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -10,4 +11,9 @@ public class MyfirstappApplication {
 		SpringApplication.run(MyfirstappApplication.class, args);
 	}
 
+	@Value("${coach.name}")
+	private String coachName;
+
+	@Value("{my.name}")
+	private String myName;
 }
