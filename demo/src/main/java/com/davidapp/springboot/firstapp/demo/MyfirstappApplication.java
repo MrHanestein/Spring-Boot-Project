@@ -11,9 +11,6 @@ public class MyfirstappApplication {
 		SpringApplication.run(MyfirstappApplication.class, args);
 	}
 
-	@Value("${coach.name}")
-	private String coachName;
 
-	@Value("{my.name}")
-	private String myName;
+
 }
